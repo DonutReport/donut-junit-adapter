@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="4" skipped="0" failures="0" errors="0" time="0.001656" timestamp="2017-09-22T11:32:18+08:00" hostname="Amits-MacBook-Air.local">
+    <properties>
+        <property name="seed" value="5105"/>
+    </properties>
+    <testcase classname="spec.string_calculator_spec" name="StringCalculator.add given an empty string returns zero" file="./spec/string_calculator_spec.rb" time="0.000417"></testcase>
+    <testcase classname="spec.string_calculator_spec" name="StringCalculator.add given &apos;4&apos; returns 4" file="./spec/string_calculator_spec.rb" time="0.000069"></testcase>
+    <testcase classname="spec.string_calculator_spec_more" name="StringCalculator.add two numbers given &apos;2,4&apos; returns 6" file="./spec/string_calculator_spec_more.rb" time="0.000061"></testcase>
+    <testcase classname="spec.string_calculator_spec_more" name="StringCalculator.add two numbers given &apos;10,17&apos; returns 27" file="./spec/string_calculator_spec_more.rb" time="0.000056"></testcase>
+</testsuite>

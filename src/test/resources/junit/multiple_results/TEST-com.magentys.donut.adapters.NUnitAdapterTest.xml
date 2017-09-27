@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="14" failures="0" name="com.magentys.donut.adapters.NUnitAdapterTest" time="0.64" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+  </properties>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldThrowAnExceptionIfRequestedTagIsNotFound" time="0.499"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToTransformTheDocumentToFeaturesList" time="0.015"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToTransformTheDocumentWithMultipleTestFixturesAtDifferentLevelToFeaturesList" time="0.021"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldThrowAnExceptionWhenATestFixtureHasNoTestCases" time="0.051"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToTransformResultXmlWithFailure" time="0.014"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldMakeElementsWithPredefinedValues" time="0.003"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToTransformTheReadXmlFileToDocument" time="0.002"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldExtractTestFixturesThatAreUnderSameAssemblyButDifferentTestSuite" time="0.01"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldExtractTestFixturesThatAreUnderDifferentAssemblies" time="0.007"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldMakeElementsWithNameAttributeAsDefaultWhenDescriptionPropertyIsNotSpecified" time="0.004"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToReadTheXmlFileUsingAnAbsolutePath" time="0"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldExtractTestFixturesThatAreUnderSameTestSuite" time="0.005"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToTransformTheDocumentWithMultipleTestFixturesAtTheSameLevelToFeaturesList" time="0.005"/>
+  <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldMakeElementsWithDescriptionPropertyWhenDescriptionPropertyIsSpecified" time="0.004"/>
+</testsuite>
