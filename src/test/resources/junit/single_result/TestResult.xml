@@ -1,10 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="rspec" tests="4" skipped="0" failures="0" errors="0" time="0.001656" timestamp="2017-09-22T11:32:18+08:00" hostname="Amits-MacBook-Air.local">
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="14" failures="0" name="com.magentys.donut.adapters.NUnitAdapterTest" time="0.64" errors="0" skipped="0">
     <properties>
-        <property name="seed" value="5105"/>
+        <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     </properties>
-    <testcase classname="spec.string_calculator_spec" name="StringCalculator.add given an empty string returns zero" file="./spec/string_calculator_spec.rb" time="0.000417"></testcase>
-    <testcase classname="spec.string_calculator_spec" name="StringCalculator.add given &apos;4&apos; returns 4" file="./spec/string_calculator_spec.rb" time="0.000069"></testcase>
-    <testcase classname="spec.string_calculator_spec_more" name="StringCalculator.add two numbers given &apos;2,4&apos; returns 6" file="./spec/string_calculator_spec_more.rb" time="0.000061"></testcase>
-    <testcase classname="spec.string_calculator_spec_more" name="StringCalculator.add two numbers given &apos;10,17&apos; returns 27" file="./spec/string_calculator_spec_more.rb" time="0.000056"></testcase>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldThrowAnExceptionIfRequestedTagIsNotFound" time="0.499"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToTransformTheDocumentToFeaturesList" time="0.015"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToTransformTheDocumentWithMultipleTestFixturesAtDifferentLevelToFeaturesList" time="0.021"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldThrowAnExceptionWhenATestFixtureHasNoTestCases" time="0.051"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToTransformResultXmlWithFailure" time="0.014"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldMakeElementsWithPredefinedValues" time="0.003"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToTransformTheReadXmlFileToDocument" time="0.002"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldExtractTestFixturesThatAreUnderSameAssemblyButDifferentTestSuite" time="0.01"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldExtractTestFixturesThatAreUnderDifferentAssemblies" time="0.007"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldMakeElementsWithNameAttributeAsDefaultWhenDescriptionPropertyIsNotSpecified" time="0.004"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToReadTheXmlFileUsingAnAbsolutePath" time="0"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldExtractTestFixturesThatAreUnderSameTestSuite" time="0.005"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldBeAbleToTransformTheDocumentWithMultipleTestFixturesAtTheSameLevelToFeaturesList" time="0.005"/>
+    <testcase classname="com.magentys.donut.adapters.NUnitAdapterTest" name="shouldMakeElementsWithDescriptionPropertyWhenDescriptionPropertyIsSpecified" time="0.004"/>
 </testsuite>

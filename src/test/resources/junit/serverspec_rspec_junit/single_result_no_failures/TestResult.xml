@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="6" skipped="0" failures="0" errors="0" time="1.770778" timestamp="2017-09-27T08:00:31+00:00" hostname="034a8606b4b0">
+    <properties>
+        <property name="seed" value="30303"/>
+    </properties>
+    <testcase classname="spec.myapp_container_spec" name="MyApp Container installed Apps Apache HTTP should have copied my app files" file="./spec/myapp_container_spec.rb" time="0.858537"></testcase>
+    <testcase classname="spec.myapp_container_spec" name="MyApp Container installed Apps Apache HTTP Process &quot;httpd&quot; should be running" file="./spec/myapp_container_spec.rb" time="0.081516"></testcase>
+    <testcase classname="spec.webserver_spec" name="I am logged onto the webserver MyApp Docker container &quot;myapp&quot; should be running" file="./spec/webserver_spec.rb" time="0.045706"></testcase>
+    <testcase classname="spec.webserver_spec" name="I am logged onto the webserver MyApp Command &quot;curl http://myapp:80&quot; stdout should match /Hello World/" file="./spec/webserver_spec.rb" time="0.030649"></testcase>
+    <testcase classname="spec.webserver_spec" name="I am logged onto the webserver Routing Internet connectivity is enabled Host &quot;8.8.8.8&quot; should be reachable" file="./spec/webserver_spec.rb" time="0.081390"></testcase>
+    <testcase classname="spec.webserver_spec" name="I am logged onto the webserver Routing Internet connectivity is enabled Host &quot;www.google.com&quot; should be reachable" file="./spec/webserver_spec.rb" time="0.075264"></testcase>
+</testsuite>

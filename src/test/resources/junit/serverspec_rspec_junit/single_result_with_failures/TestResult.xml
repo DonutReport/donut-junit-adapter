@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="rspec" tests="7" skipped="0" failures="7" errors="0" time="2.743443" timestamp="2017-09-27T07:20:25+00:00" hostname="034a8606b4b0">
+    <properties>
+        <property name="seed" value="7601"/>
+    </properties>
+    <testcase classname="spec.myapp_container_spec" name="MyApp Container installed Apps Apache HTTP should have copied my app files" file="./spec/myapp_container_spec.rb" time="0.866758"><failure message="expected &quot;&quot; to match /Hello World/
+Diff:
+@@ -1,2 +1,2 @@
+-/Hello World/
++&quot;&quot;
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: expect(file(&apos;/usr/local/apache2/htdocs/index.html&apos;).content).to match /Hello World/
+        expected &quot;&quot; to match /Hello World/
+        Diff:
+        @@ -1,2 +1,2 @@
+        -/Hello World/
+        +&quot;&quot;
+
+
+        ./spec/myapp_container_spec.rb:21:in `block (4 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+    <testcase classname="spec.myapp_container_spec" name="MyApp Container installed Apps Apache HTTP Process &quot;httpd&quot; should be running" file="./spec/myapp_container_spec.rb" time="0.136434"><failure message="expected Process &quot;httpd&quot; to be running" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: it { should be_running }
+        expected Process &quot;httpd&quot; to be running
+
+        ./spec/myapp_container_spec.rb:17:in `block (5 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+    <testcase classname="spec.webserver_spec" name="I am logged onto the webserver MyApp Docker container &quot;myapp&quot; should be running" file="./spec/webserver_spec.rb" time="0.857797"><failure message="undefined method `[]&apos; for nil:NilClass" type="NoMethodError">Failure/Error: it { should be_running }
+        NoMethodError:
+        undefined method `[]&apos; for nil:NilClass
+        /bin/sh -c docker\ inspect\ myapp
+        []
+
+        /usr/local/bundle/gems/serverspec-2.39.1/lib/serverspec/type/docker_container.rb:4:in `running?&apos;
+        /usr/local/bundle/gems/serverspec-2.39.1/lib/serverspec/matcher/be_running.rb:6:in `block (2 levels) in &lt;top (required)&gt;&apos;
+        ./spec/webserver_spec.rb:14:in `block (4 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+    <testcase classname="spec.webserver_spec" name="I am logged onto the webserver MyApp Port &quot;8080&quot; should be listening" file="./spec/webserver_spec.rb" time="0.023946"><failure message="expected Port &quot;8080&quot; to be listening" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: it { should be_listening }
+        expected Port &quot;8080&quot; to be listening
+        /bin/sh -c netstat\ -tunl\ \|\ grep\ --\ :8080\\\
+
+        ./spec/webserver_spec.rb:18:in `block (4 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+    <testcase classname="spec.webserver_spec" name="I am logged onto the webserver MyApp Command &quot;curl http://localhost:8080&quot; stdout should match /Hello World/" file="./spec/webserver_spec.rb" time="0.189117"><failure message="expected &quot;&quot; to match /Hello World/
+Diff:
+@@ -1,2 +1,2 @@
+-/Hello World/
++&quot;&quot;
+" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: its(:stdout) { should match /Hello World/ }
+        expected &quot;&quot; to match /Hello World/
+        Diff:
+        @@ -1,2 +1,2 @@
+        -/Hello World/
+        +&quot;&quot;
+
+        /bin/sh -c curl\ http://localhost:8080
+
+        ./spec/webserver_spec.rb:22:in `block (4 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+    <testcase classname="spec.webserver_spec" name="I am logged onto the webserver Routing Internet connectivity is enabled Host &quot;8.8.8.8&quot; should be reachable" file="./spec/webserver_spec.rb" time="0.013009"><failure message="expected Host &quot;8.8.8.8&quot; to be reachable" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: it { should be_reachable.with( :port =&gt; 53 ) }
+        expected Host &quot;8.8.8.8&quot; to be reachable
+        /bin/sh -c nc\ -w\ 5\ -vvvvzt\ 8.8.8.8\ 53
+
+        ./spec/webserver_spec.rb:30:in `block (5 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+    <testcase classname="spec.webserver_spec" name="I am logged onto the webserver Routing Internet connectivity is enabled Host &quot;www.google.com&quot; should be reachable" file="./spec/webserver_spec.rb" time="0.014504"><failure message="expected Host &quot;www.google.com&quot; to be reachable" type="RSpec::Expectations::ExpectationNotMetError">Failure/Error: it { should be_reachable.with( :port =&gt; 443 ) }
+        expected Host &quot;www.google.com&quot; to be reachable
+        /bin/sh -c nc\ -w\ 5\ -vvvvzt\ www.google.com\ 443
+
+        ./spec/webserver_spec.rb:33:in `block (5 levels) in &lt;top (required)&gt;&apos;</failure></testcase>
+</testsuite>

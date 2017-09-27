@@ -23,6 +23,8 @@ public class JUnitAdapterTest {
     private static final String MULTIPLE_RESULTS_FOLDER_PATH = FileUtils.toFile(JUnitAdapterTest.class.getResource("/junit/multiple_results")).getAbsolutePath();
     private static final String SINGLE_RESULT_WITH_FAILURE_FOLDER_PATH = FileUtils.toFile(JUnitAdapterTest.class.getResource("/junit/single_result_with_failure")).getAbsolutePath();
     private static final String SINGLE_RESULT_WITH_NO_TEST_CASES = FileUtils.toFile(JUnitAdapterTest.class.getResource("/junit/single_result_with_no_test_cases")).getAbsolutePath();
+    private static final String RSPEC_SINGLE_RESULT_WITH_FAILURE_FOLDER_PATH = FileUtils.toFile(JUnitAdapterTest.class.getResource("/junit/serverspec_rspec_junit/single_result_with_failures")).getAbsolutePath();
+    private static final String RSPEC_SINGLE_RESULT_WITH_NO_FAILURES_FOLDER_PATH = FileUtils.toFile(JUnitAdapterTest.class.getResource("/junit/serverspec_rspec_junit/single_result_no_failures")).getAbsolutePath();
 
     @Before
     public void setUp() {
@@ -60,6 +62,35 @@ public class JUnitAdapterTest {
         assertTrue(scenario.getName().equals("shouldBeAbleToTransformTheTestSuiteToFeaturesList"));
         assertTrue(step.getResult().getErrorMessage().contains("Error message:"));
         assertTrue(step.getResult().getStatus().equals("failed"));
+    }
+
+    @Test
+    public void shouldBeAbleToTransformRSpecJUnitResultXmlWithFailure() throws Exception {
+        List<Testsuite> testsuites = xmlUtils.unmarshal(RSPEC_SINGLE_RESULT_WITH_FAILURE_FOLDER_PATH);
+        List<Feature> features = jUnitAdapter.transform(testsuites);
+        List<Element> scenarios = features.get(0).getElements();
+        Element scenario = scenarios.get(0);
+        Step step = scenario.getSteps().get(0);
+
+        assertTrue(features.size() == 1);
+        assertTrue(scenarios.size() == 7);
+        assertTrue(scenario.getName().equals("MyApp Container installed Apps Apache HTTP should have copied my app files"));
+        assertTrue(step.getResult().getErrorMessage().contains("Error message:"));
+        assertTrue(step.getResult().getStatus().equals("failed"));
+    }
+
+    @Test
+    public void shouldBeAbleToTransformRSpecJUnitResultXmlWithNoFailures() throws Exception {
+        List<Testsuite> testsuites = xmlUtils.unmarshal(RSPEC_SINGLE_RESULT_WITH_NO_FAILURES_FOLDER_PATH);
+        List<Feature> features = jUnitAdapter.transform(testsuites);
+        List<Element> scenarios = features.get(0).getElements();
+        Element scenario = scenarios.get(0);
+        Step step = scenario.getSteps().get(0);
+
+        assertTrue(features.size() == 1);
+        assertTrue(scenarios.size() == 6);
+        assertTrue(scenario.getName().equals("MyApp Container installed Apps Apache HTTP should have copied my app files"));
+        assertTrue(step.getResult().getStatus().equals("passed"));
     }
 
     @Test
