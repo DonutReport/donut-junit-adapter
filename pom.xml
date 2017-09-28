@@ -4,7 +4,7 @@
     <groupId>io.magentys</groupId>
     <artifactId>donut-junit-adapter</artifactId>
     <packaging>jar</packaging>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.2</version>
     <name>donut-junit-adapter</name>
     <url>http://maven.apache.org</url>
 
@@ -48,6 +48,17 @@
             <version>2.33</version>
         </dependency>
     </dependencies>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
 
     <build>
         <plugins>
