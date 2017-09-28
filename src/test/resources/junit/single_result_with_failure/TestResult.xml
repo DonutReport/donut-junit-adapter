@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="com.magentys.donut.adapters.JUnitAdapterTest" time="0.163" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="io.magentys.donut.adapters.JUnitAdapterTest" time="0.163" errors="0" skipped="0">
     <properties>
         <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     </properties>
-    <testcase classname="com.magentys.donut.adapters.JUnitAdapterTest" name="shouldBeAbleToTransformTheTestSuiteToFeaturesList" time="0.163">
+    <testcase classname="io.magentys.donut.adapters.JUnitAdapterTest" name="shouldBeAbleToTransformTheTestSuiteToFeaturesList" time="0.163">
         <failure type="java.lang.AssertionError">java.lang.AssertionError
             at org.junit.Assert.fail(Assert.java:86)
             at org.junit.Assert.fail(Assert.java:95)
-            at com.magentys.donut.adapters.JUnitAdapterTest.shouldBeAbleToTransformTheTestSuiteToFeaturesList(JUnitAdapterTest.java:48)
+            at
+            io.magentys.donut.adapters.JUnitAdapterTest.shouldBeAbleToTransformTheTestSuiteToFeaturesList(JUnitAdapterTest.java:48)
             at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
             at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
             at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

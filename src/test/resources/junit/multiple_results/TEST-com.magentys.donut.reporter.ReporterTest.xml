@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="3" failures="0" name="com.magentys.donut.reporter.ReporterTest" time="0.231" errors="0" skipped="0">
+<testsuite tests="3" failures="0" name="io.magentys.donut.reporter.ReporterTest" time="0.231" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
   </properties>
-  <testcase classname="com.magentys.donut.reporter.ReporterTest" name="shouldGenerateJsonFilesInWorkingDirIfOutputDirIsBlank" time="0.218"/>
-  <testcase classname="com.magentys.donut.reporter.ReporterTest" name="shouldGenerateJsonFilesInCurrentDirIfOutputDirIsBlank" time="0.007"/>
-  <testcase classname="com.magentys.donut.reporter.ReporterTest" name="shouldGenerateSameNumberOfJsonFilesAsNumberOfFeatures" time="0.006"/>
+  <testcase classname="io.magentys.donut.reporter.ReporterTest" name="shouldGenerateJsonFilesInWorkingDirIfOutputDirIsBlank" time="0.218"/>
+  <testcase classname="io.magentys.donut.reporter.ReporterTest" name="shouldGenerateJsonFilesInCurrentDirIfOutputDirIsBlank" time="0.007"/>
+  <testcase classname="io.magentys.donut.reporter.ReporterTest" name="shouldGenerateSameNumberOfJsonFilesAsNumberOfFeatures" time="0.006"/>
 </testsuite>
