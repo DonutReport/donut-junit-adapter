@@ -4,7 +4,7 @@
     <groupId>com.magentys.donut</groupId>
     <artifactId>donut-junit-adapter</artifactId>
     <packaging>jar</packaging>
-    <version>0.1-SNAPSHOT</version>
+    <version>0.1</version>
     <name>donut-junit-adapter</name>
     <url>http://maven.apache.org</url>
 
