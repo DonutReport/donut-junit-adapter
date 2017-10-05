@@ -1,7 +1,24 @@
+## Quickstart
+
+Run using docker:
+
+```
+docker run --rm -it -v /path/to/junit/xml/target:/source -v /path/to/write/adapted/output/:/output --entrypoint="bash"  donut/donut-junit-adapter
+```
+
+Combine with Donut:
+
+NOTE: you must have at least one cucumber.json output, as well as your unit test results.
+
+Ensure your cucumber json and JUnit reports are in the same directory
+```
+docker run -v /path/to/your/cucumber-and-junit-reports:/source -v /path/to/output-report:/output donutreport/donut-docker -n myProjectName
+```
+
 ### Options
 
 `-p` or `--junit-result-dir-path` is a mandatory parameter, and it should be the path of junit result xml directory.<br>
-`-o` or `--outputdir` is an optional parameter, and it should be the directory for storing the JSON reports. 
+`-o` or `--outputdir` is an optional parameter, and it should be the directory for storing the JSON reports.
 
 ### Usage
 
@@ -25,4 +42,13 @@ else
 		 the JSON files are written in the folder `junit-reports` in the current folder
 ```
 
+# Contribution
 
+## Deploying Docker container
+
+```
+docker login
+docker build . -t donutreport/donut-junit-adapter:<version>
+docker push donutreport/donut-junit-adapter:<version>
+
+```
