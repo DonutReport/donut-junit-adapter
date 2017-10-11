@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>io.magentys</groupId>
+    <groupId>report.donut</groupId>
     <artifactId>donut-junit-adapter</artifactId>
     <packaging>jar</packaging>
-    <version>0.2.1</version>
+    <version>0.2.2</version>
     <name>donut-junit-adapter</name>
     <url>http://maven.apache.org</url>
     <description>JUnit adapter for donut reporting tool</description>
@@ -101,7 +101,7 @@
                     </descriptorRefs>
                     <archive>
                         <manifest>
-                            <mainClass>io.magentys.main.Main</mainClass>
+                            <mainClass>report.donut.main.Main</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -128,8 +128,8 @@
     </licenses>
 
     <scm>
-        <developerConnection>scm:git:git@github.com:MagenTys/donut-junit-adapter.git</developerConnection>
-        <url>https://github.com/MagenTys/donut-junit-adapter</url>
+        <developerConnection>scm:git:git@github.com:DonutReport/donut-junit-adapter.git</developerConnection>
+        <url>https://github.com/DonutReport/donut-junit-adapter</url>
         <tag>HEAD</tag>
     </scm>
 
