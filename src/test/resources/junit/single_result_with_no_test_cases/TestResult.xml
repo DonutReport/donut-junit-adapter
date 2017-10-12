@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="io.magentys.adapters.JUnitAdapterTest" time="0.163" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="report.donut.adapters.JUnitAdapterTest" time="0.163" errors="0" skipped="0">
     <properties>
         <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     </properties>
