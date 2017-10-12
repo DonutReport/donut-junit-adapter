@@ -1,3 +1,8 @@
+![](http://donutreport.github.io/donut/img/Donut-05.png)
+
+Donut JUnit adapter is an open source adapter written for the open-source framework [donut](https://github.com/DonutReport/donut) by the teams at [MagenTys](https://magentys.io) & [Mechanical Rock](https://mechanicalrock.io) and is designed to generate gherkin jsons from the JUnit xmls.
+These gherkin jsons can be processed by donut.
+
 ### Options
 
 `-p` or `--junit-result-dir-path` is a mandatory parameter, and it should be the path of junit result xml directory.<br>
@@ -25,4 +30,8 @@ else
 		 the JSON files are written in the folder `junit-reports` in the current folder
 ```
 
+## License
 
+This project is under an MIT license
+
+Powered by: [MagenTys](https://magentys.io) & [Mechanical Rock](https://www.mechanicalrock.io)
