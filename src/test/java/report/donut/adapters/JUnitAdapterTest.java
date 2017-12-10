@@ -25,6 +25,8 @@ public class JUnitAdapterTest {
     private static final String SINGLE_RESULT_WITH_NO_TEST_CASES = FileUtils.toFile(JUnitAdapterTest.class.getResource("/junit/single_result_with_no_test_cases")).getAbsolutePath();
     private static final String RSPEC_SINGLE_RESULT_WITH_FAILURE_FOLDER_PATH = FileUtils.toFile(JUnitAdapterTest.class.getResource("/junit/serverspec_rspec_junit/single_result_with_failures")).getAbsolutePath();
     private static final String RSPEC_SINGLE_RESULT_WITH_NO_FAILURES_FOLDER_PATH = FileUtils.toFile(JUnitAdapterTest.class.getResource("/junit/serverspec_rspec_junit/single_result_no_failures")).getAbsolutePath();
+    private static final String SINGLE_RESULT_WITH_MULTIPLE_TEST_SUITES = FileUtils.toFile(JUnitAdapterTest.class.getResource("/junit/single_result_multiple_test_suites")).getAbsolutePath();
+
 
     @Before
     public void setUp() {
@@ -39,6 +41,14 @@ public class JUnitAdapterTest {
 
         List<Feature> features = jUnitAdapter.transform(testsuites);
         assertTrue("One feature should be present.", features.size() == 1);
+    }
+
+    @Test
+    public void shouldBeAbleToTransformTestSuitesToFeaturesList() throws Exception {
+        List<Testsuite> testsuites = xmlUtils.unmarshal(SINGLE_RESULT_WITH_MULTIPLE_TEST_SUITES);
+
+        List<Feature> features = jUnitAdapter.transform(testsuites);
+        assertTrue("14 features should be present.", features.size() == 14);
     }
 
     @Test

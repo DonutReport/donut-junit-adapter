@@ -1,0 +1,142 @@
+<testsuites name="unit">
+  <testsuite name="/test/unit/specs/components/PlayerSearch.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:39" time="1.769" tests="8">
+    <testcase classname="PlayerSearch.vue-should prevent player search if filters are all blank" name="PlayerSearch.vue-should prevent player search if filters are all blank" time="0.106">
+    </testcase>
+    <testcase classname="PlayerSearch.vue-should allow player search if at least one filter is filled" name="PlayerSearch.vue-should allow player search if at least one filter is filled" time="0.074">
+    </testcase>
+    <testcase classname="PlayerSearch.vue-should update player search filter fields" name="PlayerSearch.vue-should update player search filter fields" time="0.06">
+    </testcase>
+    <testcase classname="PlayerSearch.vue-should render player data in table" name="PlayerSearch.vue-should render player data in table" time="0.045">
+    </testcase>
+    <testcase classname="PlayerSearch.vue-should provide link to edit player details" name="PlayerSearch.vue-should provide link to edit player details" time="0.039">
+    </testcase>
+    <testcase classname="PlayerSearch.vue-should provide filters for all available purchase types" name="PlayerSearch.vue-should provide filters for all available purchase types" time="0.047">
+    </testcase>
+    <testcase classname="PlayerSearch.vue-should provide filters for all available player status" name="PlayerSearch.vue-should provide filters for all available player status" time="0.028">
+    </testcase>
+    <testcase classname="PlayerSearch.vue-should provide option to download HTML that displays table of players" name="PlayerSearch.vue-should provide option to download HTML that displays table of players" time="0.03">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/components/VerificationDetails.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:41" time="1.445" tests="12">
+    <testcase classname="VerificationDetails.vue-should display player details correctly" name="VerificationDetails.vue-should display player details correctly" time="0.186">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should display player address correctly" name="VerificationDetails.vue-should display player address correctly" time="0.111">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should provide option to upload proof of address document" name="VerificationDetails.vue-should provide option to upload proof of address document" time="0.133">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should provide option to approve verification" name="VerificationDetails.vue-should provide option to approve verification" time="0.073">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should provide option to mark as verified and approve verification" name="VerificationDetails.vue-should provide option to mark as verified and approve verification" time="0.082">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should provide option to reject verification" name="VerificationDetails.vue-should provide option to reject verification" time="0.086">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should provide link to view proof of age document" name="VerificationDetails.vue-should provide link to view proof of age document" time="0.117">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should provide link to view proof of address document" name="VerificationDetails.vue-should provide link to view proof of address document" time="0.114">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should provide option to remove proof of age document" name="VerificationDetails.vue-should provide option to remove proof of age document" time="0.12">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should provide link to remove proof of address document" name="VerificationDetails.vue-should provide link to remove proof of address document" time="0.104">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should provide option to select and upload new proof of age document of image type" name="VerificationDetails.vue-should provide option to select and upload new proof of age document of image type" time="0.111">
+    </testcase>
+    <testcase classname="VerificationDetails.vue-should provide option to select and upload new proof of address document of image type" name="VerificationDetails.vue-should provide option to select and upload new proof of address document of image type" time="0.106">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/components/PlayerExpandedDetails.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:42" time="0.769" tests="5">
+    <testcase classname="PlayerExpandedDetails.vue-should provide option to enable editing of details" name="PlayerExpandedDetails.vue-should provide option to enable editing of details" time="0.188">
+    </testcase>
+    <testcase classname="PlayerExpandedDetails.vue-should provide separate link to ban the player" name="PlayerExpandedDetails.vue-should provide separate link to ban the player" time="0.089">
+    </testcase>
+    <testcase classname="PlayerExpandedDetails.vue-should provide access rights table when editing is enabled" name="PlayerExpandedDetails.vue-should provide access rights table when editing is enabled" time="0.114">
+    </testcase>
+    <testcase classname="PlayerExpandedDetails.vue-should update notes to indicate fields that have changed" name="PlayerExpandedDetails.vue-should update notes to indicate fields that have changed" time="0.118">
+    </testcase>
+    <testcase classname="PlayerExpandedDetails.vue-should update to player model should reflect in input fields" name="PlayerExpandedDetails.vue-should update to player model should reflect in input fields" time="0.113">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/components/PlayerOutline.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:43" time="0.498" tests="2">
+    <testcase classname="PlayerOutline.vue-should show basic player details" name="PlayerOutline.vue-should show basic player details" time="0.223">
+    </testcase>
+    <testcase classname="PlayerOutline.vue-should provide option to expand player details" name="PlayerOutline.vue-should provide option to expand player details" time="0.156">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/services/logged_axios_client.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:44" time="0.385" tests="8">
+    <testcase classname="LoggedAxiosClient › HTTP Request Success Logging-should send logs with supplied request and response params on successful POST" name="LoggedAxiosClient › HTTP Request Success Logging-should send logs with supplied request and response params on successful POST" time="0.008">
+    </testcase>
+    <testcase classname="LoggedAxiosClient › HTTP Request Success Logging-should send logs with supplied request and response params on successful GET" name="LoggedAxiosClient › HTTP Request Success Logging-should send logs with supplied request and response params on successful GET" time="0.003">
+    </testcase>
+    <testcase classname="LoggedAxiosClient › HTTP Request Success Logging-should send logs with supplied request and response params on successful PUT" name="LoggedAxiosClient › HTTP Request Success Logging-should send logs with supplied request and response params on successful PUT" time="0.015">
+    </testcase>
+    <testcase classname="LoggedAxiosClient › HTTP Request Success Logging-should send logs with supplied request and response params on successful DELETE" name="LoggedAxiosClient › HTTP Request Success Logging-should send logs with supplied request and response params on successful DELETE" time="0.003">
+    </testcase>
+    <testcase classname="LoggedAxiosClient › HTTP Request Failure Logging-should send logs with supplied request and error on failed POST" name="LoggedAxiosClient › HTTP Request Failure Logging-should send logs with supplied request and error on failed POST" time="0.008">
+    </testcase>
+    <testcase classname="LoggedAxiosClient › HTTP Request Failure Logging-should send logs with supplied request and error on failed GET" name="LoggedAxiosClient › HTTP Request Failure Logging-should send logs with supplied request and error on failed GET" time="0.003">
+    </testcase>
+    <testcase classname="LoggedAxiosClient › HTTP Request Failure Logging-should send logs with supplied request and error on failed PUT" name="LoggedAxiosClient › HTTP Request Failure Logging-should send logs with supplied request and error on failed PUT" time="0.002">
+    </testcase>
+    <testcase classname="LoggedAxiosClient › HTTP Request Failure Logging-should send logs with supplied request and error on failed DELETE" name="LoggedAxiosClient › HTTP Request Failure Logging-should send logs with supplied request and error on failed DELETE" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/components/VerificationOverview.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:44" time="0.134" tests="3">
+    <testcase classname="VerificationOverview.vue-should display basic player info and verification status" name="VerificationOverview.vue-should display basic player info and verification status" time="0.028">
+    </testcase>
+    <testcase classname="VerificationOverview.vue-should provide option to download HTML that displays table of verifications" name="VerificationOverview.vue-should provide option to download HTML that displays table of verifications" time="0.017">
+    </testcase>
+    <testcase classname="VerificationOverview.vue-should provide link to view further information on player verification details" name="VerificationOverview.vue-should provide link to view further information on player verification details" time="0.018">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/store/actions/players.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:44" time="0.127" tests="3">
+    <testcase classname="getPlayers-should make API request for all players if ID is not specified in filters" name="getPlayers-should make API request for all players if ID is not specified in filters" time="0.005">
+    </testcase>
+    <testcase classname="getPlayers-should make API request for one player if ID specified in filters" name="getPlayers-should make API request for one player if ID specified in filters" time="0.001">
+    </testcase>
+    <testcase classname="getPlayer-should make API request for player by ID" name="getPlayer-should make API request for player by ID" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/components/Breadcrumbs.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:44" time="0.075" tests="3">
+    <testcase classname="Breadcrumb.vue-should build breadcrumbs for player search" name="Breadcrumb.vue-should build breadcrumbs for player search" time="0.008">
+    </testcase>
+    <testcase classname="Breadcrumb.vue-should build breadcrumbs for player details" name="Breadcrumb.vue-should build breadcrumbs for player details" time="0.006">
+    </testcase>
+    <testcase classname="Breadcrumb.vue-should build breadcrumbs for player verification details" name="Breadcrumb.vue-should build breadcrumbs for player verification details" time="0.008">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/store/mutations/verifications.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:45" time="0.061" tests="2">
+    <testcase classname="requestVerificationsSuccess-should set player verifications data in store" name="requestVerificationsSuccess-should set player verifications data in store" time="0.001">
+    </testcase>
+    <testcase classname="requestVerificationSuccess-should set player verification data in store" name="requestVerificationSuccess-should set player verification data in store" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/store/actions/verifications.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:45" time="0.053" tests="2">
+    <testcase classname="getVerifications-should make API request for all verifications belonging to a player" name="getVerifications-should make API request for all verifications belonging to a player" time="0.004">
+    </testcase>
+    <testcase classname="getVerification-should make API request for verification by ID" name="getVerification-should make API request for verification by ID" time="0.003">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/store/mutations/players.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:45" time="0.034" tests="2">
+    <testcase classname="requestPlayersSuccess-should set players in store" name="requestPlayersSuccess-should set players in store" time="0.001">
+    </testcase>
+    <testcase classname="requestPlayerSuccess-should set player in store and change loading state to false" name="requestPlayerSuccess-should set player in store and change loading state to false" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/injector/logging_provider.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:45" time="0.034" tests="2">
+    <testcase classname="LoggingProvider-should provide loggly logger when environment is production" name="LoggingProvider-should provide loggly logger when environment is production" time="0.001">
+    </testcase>
+    <testcase classname="LoggingProvider-should provide pretty console logger when environment is not production" name="LoggingProvider-should provide pretty console logger when environment is not production" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/store/getters/players.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:45" time="0.056" tests="2">
+    <testcase classname="playerList-should get list of players from store" name="playerList-should get list of players from store" time="0.001">
+    </testcase>
+    <testcase classname="playerDetails-should get details of a player from store" name="playerDetails-should get details of a player from store" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="/test/unit/specs/store/getters/verifications.spec.js" errors="0" failures="0" skipped="0" timestamp="2017-12-09T14:12:45" time="0.051" tests="2">
+    <testcase classname="verificationsList-should get list of player verifications from store" name="verificationsList-should get list of player verifications from store" time="0.001">
+    </testcase>
+    <testcase classname="verificationDetails-should get player verification details from store" name="verificationDetails-should get player verification details from store" time="0.001">
+    </testcase>
+  </testsuite>
+</testsuites>

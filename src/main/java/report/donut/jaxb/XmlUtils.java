@@ -1,14 +1,18 @@
 package report.donut.jaxb;
 
+import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.io.FileUtils;
 import report.donut.junit.model.ObjectFactory;
 import report.donut.junit.model.Testsuite;
+import report.donut.junit.model.Testsuites;
+import sun.reflect.annotation.ExceptionProxy;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 import javax.xml.bind.Unmarshaller;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class XmlUtils {
@@ -26,7 +30,14 @@ public class XmlUtils {
             List<File> files = (List<File>) FileUtils.listFiles(file, new String[]{"xml"}, true);
             List<Testsuite> testsuites = new ArrayList<>();
             for (File resultFile : files) {
-                testsuites.add(unmarshal(resultFile));
+
+                Object obj = unmarshal(resultFile);
+
+                if (obj != null) {
+                    testsuites.addAll((List<Testsuite>) obj);
+                }else{
+                    throw new Exception("Unmarshalling returned null.");
+                }
             }
             return testsuites;
         }
@@ -34,10 +45,19 @@ public class XmlUtils {
         throw new Exception("Provided path isn't a directory or the path isn't absolute.");
     }
 
-    private Testsuite unmarshal(File file) throws JAXBException {
+    private Object unmarshal(File file) throws JAXBException {
         JAXBContext context = JAXBContext.newInstance(factory.getClass());
         Unmarshaller unmarshaller = context.createUnmarshaller();
 
-        return (Testsuite) unmarshaller.unmarshal(file);
+        Object obj = unmarshaller.unmarshal(file);
+
+        if (obj instanceof Testsuite) {
+            return Collections.singletonList(obj);
+        }
+
+        if (obj instanceof Testsuites) {
+            return ((Testsuites) obj).getTestsuite();
+        }
+        return null;
     }
 }
