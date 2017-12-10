@@ -4,7 +4,7 @@
     <groupId>report.donut</groupId>
     <artifactId>donut-junit-adapter</artifactId>
     <packaging>jar</packaging>
-    <version>0.2.2</version>
+    <version>0.2.3</version>
     <name>donut-junit-adapter</name>
     <url>http://maven.apache.org</url>
     <description>JUnit adapter for donut reporting tool</description>
