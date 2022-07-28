@@ -1,11 +1,9 @@
 package report.donut.jaxb;
 
-import org.apache.commons.collections.CollectionUtils;
 import org.apache.commons.io.FileUtils;
 import report.donut.junit.model.ObjectFactory;
 import report.donut.junit.model.Testsuite;
 import report.donut.junit.model.Testsuites;
-import sun.reflect.annotation.ExceptionProxy;
 
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
